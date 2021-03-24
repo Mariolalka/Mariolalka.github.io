@@ -22,6 +22,7 @@
       text-align: center;
       background: #0d0d6e;
       color: white;
+      height: 300px;
     }
 
     /* Increase the font size of the heading */
@@ -155,6 +156,29 @@
       cursor: pointer;
     }
 
+    .poster-video {
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .header-text-contaner{
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+
     /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 700px) {
       .row {
@@ -187,8 +211,25 @@
 <body>
 
   <div class="header">
+    <div class="header-text-contaner">
     <h1>Fundusze Norweskie i EOG</h1>
     <h3>O <b>TYM</b> SIĘ WIE!</h3>
+  </div>
+    <div poster="https://static.videezy.com/assets/videezy/masthead-video-poster-fb454530f76a76749f980a471f1db249.jpg"
+      id="site-masthead-video" muted="true" loop="true" autoplay="true" playsinline=""
+      data-setup="{ &quot;controls&quot;: false, &quot;autoplay&quot;: true, &quot;preload&quot;: &quot;auto&quot; }"
+      class="poster-video">
+
+      <video
+        data-setup="{ &quot;controls&quot;: false, &quot;autoplay&quot;: true, &quot;preload&quot;: &quot;auto&quot; }"
+        playsinline="" autoplay="" loop="" muted="" id="site-masthead-video_html5_api"
+        poster="https://static.videezy.com/assets/videezy/masthead-video-poster-fb454530f76a76749f980a471f1db249.jpg"
+        class="vjs-tech" preload="auto" src="https://www.videezy.com/assets/videezy/masthead-video.mp4">
+        <source src="https://www.videezy.com/assets/videezy/masthead-video.mp4" type="video/mp4">
+        <source src="https://www.videezy.com/assets/videezy/masthead-video.webm" type="video/webm">
+      </video>
+
+    </div>
   </div>
 
   <div class="navbar">
