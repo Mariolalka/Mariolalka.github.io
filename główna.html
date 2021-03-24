@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Strona główna</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    /*logo Title */
+    .logo {
+      padding: 80px;
+      text-align: center;
+      background: #1abc9c;
+    }
+
+    /* Header/logo Title */
+    .header {
+      height: 315px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .header_g {
+      background: #1abc9c;
+    }
+
+    .header_l {
+      background: #4dff79;
+    }
+
+    .header_k {
+      background: #ff0000;
+    }
+
+    .header_i {
+      background: #0d0d6e;
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+
+    /* zmień kolor po najechaniu */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Active/current link */
+    .navbar a.active {
+      background-color: #666;
+      color: white;
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 50%;
+      /* IE10 */
+      flex: 50%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      -ms-flex: 50%;
+      /* IE10 */
+      flex: 50%;
+      background-color: #f1f1f1;
+      padding: 20px;
+      padding-left: 0%;
+    }
+
+    /* tło pod tekst lub zdjecie */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #18b495;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+      .main {
+        padding-left: 20px;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    a {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="logo">
+    <img src="główna_logo.jpg" alt="logo" style="max-width:500px;" width="100%">
+  </div>
+
+  <div class="navbar">
+    <a href="główna.html" style="background:#18b495">Główna</a>
+    <a href="lokalne.html">Lokalne</a>
+    <a href="informacje.html">Informacje</a>
+    <a href="kontakt.html" class="right">Kontakt</a>
+  </div>
+
+  <div class="row">
+
+    <div class="side">
+      <a href="informacje.html">
+        <div class="header header_i">
+          <h1>Fundusze Norweskie i EOG</h1>
+          <h3>O <b>TYM</b> SIĘ WIE!</h3>
+        </div>
+      </a>
+      <br>
+      <a href="lokalne.html">
+        <div class="header header_l">
+          <h1>Lokalne</h1>
+          <h3>DZIAŁANIA FUNDUSZY I EOG</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="main">
+      <a href="kontakt.html">
+        <div class="header header_k">
+          <h1>Kontakty</h1>
+          <h3>DANE DO OPERATORÓW</h3>
+        </div>
+      </a>
+      <br>
+
+      <a href="https://www.testportal.pl/test.html?t=JHKetEsfitb7">
+        <div class="header header_g">
+          <h1>QUIZ</h1>
+          <h3>Fundusze Norweskie i EOG</h3>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="footer">
+    <h2>S T R O N A _ G Ł Ó W N A</h2>
+  </div>
+
+
+</body>
+
+</html>

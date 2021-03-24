@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Strona główna</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    /* Header/logo Title */
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #0d0d6e;
+      color: white;
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+
+    /* zmień kolor po najechaniu */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Active/current link */
+    .navbar a.active {
+      background-color: #666;
+      color: white;
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%;
+      /* IE10 */
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+
+    .section {
+      background-color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* stopka */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #333385;
+    }
+
+    .infographic-section-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .background_ochrona_s {
+      background: url("ochronakrycie.png");
+      padding: 50px;
+    }
+
+    .background_dziedzictwo {
+      background: url("dziedzictwokrycie.png");
+      padding: 50px;
+    }
+
+    .background_zdrowie {
+      background: url("komorkikrycie.png");
+      padding: 50px;
+    }
+
+    .background_badania {
+      background: url("labkrycie.png");
+      padding: 50px;
+    }
+
+    .background_stypendia {
+      background: url("stypendiakrycie.png");
+      padding: 50px;
+    }
+
+    .list li {
+      margin-bottom: 15px;
+    }
+
+    .infographic-image {
+      max-width: 500px;
+      width: 50%
+    }
+
+    a {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .infographic-section-container {
+        flex-direction: column;
+        margin: 40px 0;
+        text-align: center;
+      }
+
+      .infographic-image {
+        width: 100%
+      }
+
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Fundusze Norweskie i EOG</h1>
+    <h3>O <b>TYM</b> SIĘ WIE!</h3>
+  </div>
+
+  <div class="navbar">
+    <a href="główna.html">Główna</a>
+    <a href="lokalne.html">Lokalne</a>
+    <a href="informacje.html" style="background:#0b0b5a">Informacje</a>
+    <a href="kontakt.html" class="right">Kontakt</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+
+      <h3>Obszary wsparcia w ramach Funduszy to m.in.:</h3>
+
+
+      <a href="ochrona-środowiska.html">
+        <div class="background_ochrona_s">
+          <b>Ochrona środowiska</b>
+        </div><br>
+      </a>
+
+      <a href="Dziedzictwo-kulturowe.html">
+        <div class="background_dziedzictwo">
+          <b>Dziedzictwo kulturowe</b>
+        </div><br>
+      </a>
+
+      <a href="zdrowie.html">
+        <div class="background_zdrowie">
+          <b>Zdrowie</b>
+        </div><br>
+      </a>
+
+      <a href="badania-naukowe.html">
+      <div class="background_badania">
+        <b>Badania naukowe</b>
+      </div><br>
+      </a>
+
+      <a href="stypendia.html">
+      <div class="background_stypendia">
+        <b>Stypendia</b>
+      </div>
+    </a>
+    </div>
+
+    <div class="main">
+      <h2> Fundusze Norweskie i Fundusze Europejskiego Obszaru Gospodarczego</h2>
+      <div class="section" style="width:100%;">
+        <h3>Fundusze Norweskie i Fundusze Europejskiego Obszaru Gospodarczego (EOG) to pomoc finansowa dla kilkunastu
+          krajów Unii Europejskiej
+          o niższych wskaźnikach rozwoju, którą przekazują Norwegia, Islandia i Liechtenstein.
+          W zamian za to, państwa te korzystają z dostępu do rynku wewnętrznego UE, mimo że nie są jej
+          członkami.</h3><br><br>
+
+
+        <div class="main">
+          <div class="infographic-section-container">
+            <p class="list">
+              Pomoc Norwegii, Islandii i <br>
+              Liechtenstein dla <b>15</b><br>
+              europejskich państw o <br>
+              niższych wskaźnikach <br>
+              rozwoju.<br><br>
+              <b>Fundusze zmniejszają różnice<br>
+                ekonomiczne i społeczne</b>
+            </p>
+            <img src="1 - REBUILD THE ECONOMY.png" alt="grafika" class="infographic-image">
+          </div>
+        </div>
+
+
+        <div class="main">
+          <h2></h2>
+          <div class="infographic-section-container">
+            <img src="2 - INCOME INEQUALITY.png" alt="grafika" class="infographic-image">
+
+            <p class="list">
+              We wcześniejszych II <br>
+              edycjach w Polsce <br>
+              wykonano łącznie <b>2700</b><br>
+              projektów i wykorzystano<br>
+              ponad <b>1mld</b> euro<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="main">
+          <div class="infographic-section-container">
+            <p class="list">
+              W obecnej edycji Polska jest<br>
+              największym odbiorcą.<br>
+              Wykorzysta prawie <b>30%</b><br>
+              wszystkich środków
+            </p>
+            <img src="6 - FINANCES.png" alt="grafika" class="infographic-image">
+          </div>
+        </div>
+
+        <div class="main">
+          <h2></h2>
+          <div class="infographic-section-container">
+            <img src="5 - RECRUITING.png" alt="grafika" class="infographic-image">
+
+            <p class="list">
+              Działanie to ma na celu<br>
+              <b>zwiekszenie konkurencyjności</b><br>
+              polskich firm<br><br>
+
+              Małe i średnie przedsiębiorstwa<br>
+              mogą się starać o dofinansowanie<br>
+              nawet do <b>2mln</b> euro
+            </p>
+          </div>
+        </div>
+
+        <div class="main">
+          <div class="infographic-section-container">
+            <div>
+              <b>Programy mają na celu m.in </b><br>
+              <ul class="list">
+                <li>podniesienie jakości życia<br> mieszkańców na rzecz<br> odpowiedzialnego rozwoju<br></li>
+                <li>przyspieszenie rozwoju wiedzy na<br> bazie badań polskich naukowców<br></li>
+                <li>pomóc w wymianie doświadczeń,<br> unowocześnienie metod edukacyjnych<br></li>
+                <li>łagodzenie zmian klimatycznych<br></li>
+                <li>skupienie się na roli kultury w rozwoju,<br> zatrudnieniu i przedsiębiorczości lokalnej<br></li>
+              </ul>
+            </div>
+
+            <img src="9 - ECONOMY ANALYSIS.png" alt="grafika" class="infographic-image">
+          </div>
+        </div>
+
+        <div class="main">
+          <h2></h2>
+          <div class="infographic-section-container">
+            <img src="4 - BUDGETTING.png" alt="grafika" class="infographic-image">
+
+            <ul class="list">
+              <li>profilaktykę i ograniczanie nierówności<br>
+                społecznych w zdrowiu<br></li>
+              <li>pomoc w dziedzinach doradztwa<br>
+                prawnego, mediacji, standardów<br>
+                przesłuchań dzieci<br></li>
+              <li>pomoc nieletnim azylantom,<br>
+                zwalczanie przestępczości cyfrowej,<br>
+                walka z fałszerstwem dokumentów,<br>
+                współpraca policji ponad granicami<br></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="main">
+          <h2></h2>
+          <div class="infographic-section-container">
+
+            <ul class="list">
+              <li>wsparcie społeczeństwa obywatelskiego<br>
+                wzmocnienie najsłabszych grup<br></li>
+              <li>dofinansowanie projektów<br>
+                konkursowych<br></li>
+              <li>wspieranie działań szkoleń i kampanii<br>
+                uświadamiających</li>
+            </ul>
+            <img src="8 - BUYING A HOUSE.png" alt="grafika" class="infographic-image">
+
+          </div>
+        </div>
+
+
+        <br>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>I N F O R M A C J E</h2>
+  </div>
+
+
+</body>
+
+</html>

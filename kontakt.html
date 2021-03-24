@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Strona główna</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    /* Header/logo Title */
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #ff0000;
+      color: white;
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+
+    /* zmień kolor po najechaniu */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Active/current link */
+    .navbar a.active {
+      background-color: #666;
+      color: white;
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%;
+      /* IE10 */
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* tło pod tekst lub zdjecie */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo_container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo_container img:first-child {
+      margin-right: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ff1a1a;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .contact-container {
+        flex-direction: column;
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Kontakty</h1>
+    <h3><b>DANE DO OPERATORÓW</b></h3>
+  </div>
+
+  <div class="navbar">
+    <a href="główna.html">Główna</a>
+    <a href="lokalne.html">Lokalne</a>
+    <a href="informacje.html">Informacje</a>
+    <a href="kontakt.html" class="right" style="background:#dd0202">Kontakt</a>
+  </div>
+
+
+  <div class="main">
+    <h2>Ministerstwo Funduszy i Polityki Regionalnej</h2>
+    <div class="contact-container">
+      <p class="p_small"> <b>ul. Wspólna 2/4 00-926 Warszawa</b><br>
+        Departament Programów Pomocowych<br>
+        Sekretariat Departamentu:<br>
+        Tel.: 22 273 78 00<br>
+        Faks: 22 273 89 13</p>
+
+      <img src="mfipr_logo.png" alt="logo" width="300">
+    </div>
+
+
+
+    <h2>Punkt Informacyjny Ministerstwa</h2>
+    <div class="contact-container">
+      <p class="p_small"> <b> Krajowy Punkt Kontaktowy </b><br>
+        Ministerstwo Funduszy i Polityki Regionalnej<br>
+        Departament Programów Pomocowych <br>
+        tel. 22 273 78 44; 22 273 78 33<br>
+        e-mail eog@mfipr.gov.pl<br>
+      </p>
+    </div>
+    <div class="fakeimg" style="height:20px;"></div>
+
+    <h2>Dane kontaktowe do Operatorów</h2>
+
+    <div class="contact-container">
+      <p class="p_small"> <b> Rozwój lokalny </b><br>
+        Ministerstwo Funduszy i Polityki Regionalnej<br>
+        Departament Programów Pomocowych<br>
+        tel. +48 22 273 77 91<br>
+        e-mail rozwojlokalny@miir.gov.pl<br>
+      </p>
+    </div>
+
+
+    <div class="contact-container">
+      <p class="p_small"> <b>Rozwój przedsiębiorczości i innowacje</b><br>
+        Polska Agencja Rozwoju Przedsiębiorczości<br>
+        Departament Koordynacji Wdrażania Programów<br>
+        tel. +48 22 432 80 80 +48 22 432 71 25<br>
+        e-mail info@parp.gov.pl<br>
+      </p>
+      <img src="Logotyp_Polska_Agencja_Rozwoju_Przedsiębiorczosci.jpg" alt="logo" width="200">
+    </div>
+    <div class="contact-container">
+      <p class="p_small"> <b>Badania</b><br>
+        Narodowe Centrum Nauki<br>
+        Zespół ds. Funduszy Norweskich<br>
+        tel. +48 12 341 90 03<br>
+        e-mail biuro@ncn.gov.pl<br>
+      </p>
+      <img src="NarodoweCentrumNauki_logo.png" alt="logo" width="200">
+    </div>
+
+    <div class="contact-container">
+      <p class="p_small">
+        Narodowe Centrum Badań i Rozwoju<br>
+        Dział Współpracy Międzynarodowej <br>
+        tel. +48 22 39 07 401<br>
+        e-mail norwaygrants@ncbr.gov.pl<br>
+      </p>
+      <img src="NarodoweCentrumBadańIRozwoju.png" alt="logo" width="200">
+    </div>
+    <div class="contact-container">
+      <p class="p_small"> <b>Edukacja</b><br>
+        Fundacja Rozwoju Systemu Edukacji<br>
+        Biuro Programów Zewnętrznych i Międzysektorowych<br>
+        Zespół Programu Edukacja<br>
+        tel. +48 22 46 31 650<br>
+        e-mail edukacja.eog@frse.org.pl <br>
+      </p>
+      <img src="FRSE_logo.jpg" alt="logo" width="200">
+    </div>
+    <div class="contact-container">
+      <p class="p_small"> <b>Środowisko, energia i zmiany klimatu </b><br>
+        Ministerstwo Klimatu i Środowiska przy wsparciu <br> Narodowego Funduszu Ochrony Środowiska i Gospodarki
+        Wodnej<br>
+        Departament Funduszy Europejskich<br>
+        tel. +48 22 369 28 23<br>
+        e-mail mfeog@klimat.gov.pl<br>
+      </p>
+
+      <div class="logo_container">
+        <img src="mkis_logo.png" alt="logo" width="200">
+        <img src="NFOSiGW_logo.jpg" alt="logo" width="200">
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <p class="p_small"> <b>Kultura </b><br>
+        Ministerstwo Kultury i Dziedzictwa Narodowego<br>
+        Departament Funduszy i Spraw Europejskich<br>
+        tel. +48 22 69 25 410<br>
+        e-mail dfe@mkidn.gov.pl<br>
+      </p>
+      <img src="Logo_Ministerstwa_Kultury_i_Dziedzictwa_Narodowego.svg.png" alt="logo" width="200">
+    </div>
+
+    <div class="contact-container">
+      <p class="p_small"> <b>Zdrowie</b><br>
+        Ministerstwo Zdrowia<br>
+        Departament Oceny Inwestycji<br>
+        tel. +48 882 354 588<br>
+        e-mail dep-doci@mz.gov.pl<br>
+      </p>
+      <img src="Logo_Ministerstwa_Zdrowia.png" alt="logo" width="200">
+    </div>
+    <div class="contact-container">
+      <p class="p_small"> <b>Sprawiedliwość</b><br>
+        Ministerstwo Sprawiedliwości<br>
+        Departament Strategii i Funduszy Europejskich <br>
+        tel. +48 22 23 90 265<br>
+        e-mail nmf@ms.gov.pl<br>
+      </p>
+      <img src="minspr_logo.jpg" alt="logo" width="200">
+    </div>
+    <div class="contact-container">
+      <p class="p_small"> <b>Sprawy wewnętrzne </b><br>
+        Ministerstwo Spraw Wewnętrznych i Administracji<br>
+        Departament Funduszy Europejskich<br>
+        tel. +48 22 601 42 48<br>
+        e-mail fundusze.kontakt@mswia.gov.pl<br>
+      </p>
+      <img src="MSWewIAdm.png" alt="logo" width="200">
+    </div>
+    <div class="contact-container">
+      <p class="p_small"> <b>Dialog społeczny i godna praca</b><br>
+        Royal Norwegian Embassy Commercial Section I<br>
+        Innovation Norway<br>
+        Warta Tower<br>
+        Chmielna 85/87 <br>
+        00-805 Warszawa<br>
+      </p>
+
+      <div class="logo_container">
+        <img src="rne_logo.png" alt="logo" width="200">
+        <img src="Innovation_Norway_Logo.png" alt="logo" width="200">
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <p class="p_small"> <b>Społeczeństwo obywatelskie - fundusz krajowy</b><br>
+        Fundacja im. Stefana Batorego<br>
+        tel.: +48 22 536 02 00<br>
+        e-mail batory@batory.org.pl<br>
+      </p>
+      <img src="batory_logo.png" alt="logo" width="200">
+    </div>
+    <div class="fakeimg" style="height:20px;"></div>
+    <p>Dane ze strony www.eog.gov.pl</p>
+  </div>
+
+  <div class="footer">
+    <h2>K O N T A K T</h2>
+  </div>
+
+
+</body>
+
+</html>
